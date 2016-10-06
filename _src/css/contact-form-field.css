@@ -3,7 +3,7 @@
 
 .ContactFormField {
 	/*border-bottom: solid 2px #bdbdbd;*/
-	border: solid 4px #1976d2;
+	border-bottom: solid 2px #1976d2;
 	/*border-radius: 2px;*/
 	display: block;
 	margin-bottom: 1.5em;
