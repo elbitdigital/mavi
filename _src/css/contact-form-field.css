@@ -1,0 +1,207 @@
+
+/* Contact Form Field */
+
+.ContactFormField {
+	/*border-bottom: solid 2px #bdbdbd;*/
+	border: solid 4px #1976d2;
+	/*border-radius: 2px;*/
+	display: block;
+	margin-bottom: 1.5em;
+	/*max-width: 24em;*/
+	overflow: hidden;
+	padding: 1.5em 1em 1.5em;
+	position: relative;
+	text-align: left;
+	-webkit-transition: border .3s, background .3s, padding .3s;
+	-moz-transition: border .3s, background .3s, padding .3s;
+	-ms-transition: border .3s, background .3s, padding .3s;
+	-o-transition: border .3s, background .3s, padding .3s;
+	transition: border .3s, background .3s, padding .3s;
+	width: 100%;
+}
+
+.ContactForm-row .ContactFormField {
+	min-width: 100%;
+	margin-right: 1em;
+	flex: 1;
+}
+
+.ContactForm-row .ContactFormField:last-of-type {
+	margin-right: 0;
+	flex: 1;
+}
+
+.ContactFormField--multiple {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	position: relative;
+	width: 100%;
+}
+
+/* Contact Form message field (textarea) */
+
+.ContactFormField--message {
+	height: 6em;
+}
+
+/* Contact Form Field input textarea */
+
+.ContactFormField input,
+.ContactFormField textarea {
+	font-size: 1em;
+	width: 100%;
+	padding: 0 .275em;
+	/*font-weight: 700;*/
+}
+
+/* Contact Form Field label */
+
+.ContactFormField label {
+	font-size: .875em;
+	font-weight: 900;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	position: absolute;
+	-webkit-transition: transform .3s;
+	-moz-transition: transform .3s;
+	-ms-transition: transform .3s;
+	-o-transition: transform .3s;
+	transition: transform .3s;
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+	padding-top: .75em;
+	pointer-events: none;
+	top: 0;
+	width: 100%;
+}
+
+.ContactFormField.is-error label {
+	font-size: .725em;
+	font-weight: 500;
+	color: rgba(213,0,0,0.5);
+}
+
+/* VALIDATION STYLES */
+
+.ContactFormField.is-required::after {
+	color: #0069ff;
+	content: '*';
+	display: none;
+	font-size: 20px;
+	width: 25px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	z-index: 1;
+}
+
+.ContactFormField.is-required-one::after {
+	color: #0069ff;
+	content: '+';
+	display: none;
+	font-size: 20px;
+	width: 25px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	z-index: 1;
+}
+
+.ContactFormField.is-required-one.is-error::after {
+	display: block;
+}
+
+.ContactFormField.is-error::after {
+	color: #d50000;
+}
+
+.ContactFormField.is-valid::after{
+	display: none;
+}
+
+/* Contact Form Field focused style */
+
+.ContactFormField.is-valid {
+	border-color: #80d8ff;
+}
+
+.ContactFormField.has-focus {
+	border-color: #80d8ff;
+}
+
+/* Contact Form Field labeled style */
+
+.ContactFormField.has-label {
+	/*padding: 2.25em 1.5em .75em;*/
+	padding: 2.25em 1em .75em;
+}
+
+/* Contact Form Field labeled label style */
+
+.ContactFormField.has-label label {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+}
+
+/* Contact Form Field empty style */
+
+.ContactFormField.is-error {
+	border-color: #d50000;
+}
+
+/* Webkit fallback (hide placeholder on input focus) */
+
+.ContactFormField:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+/* Contact Form Field empty input/textarea style */
+
+.ContactFormField.is-error:-moz-placeholder {color: rgba(213,0,0,0.5);} /* ff 18- */
+.ContactFormField.is-error:-ms-input-placeholder {color: rgba(213,0,0,0.5);}
+.ContactFormField.is-error::-webkit-input-placeholder {color: rgba(213,0,0,0.5);}
+
+/* Contact Form Field empty input/textarea style (general) */
+
+.ContactFormField.is-error input,
+.ContactFormField.is-error textarea {
+	color: #d50000; /*red-a700*/
+}
+
+@media (min-width: 48em) {
+
+	/* Contact Form Field */
+
+	.ContactFormField {
+		max-width: 100%;
+	}
+
+	.ContactForm-row .ContactFormField {
+		min-width: 0;
+		margin-right: 1em;
+		flex: 1;
+	}
+
+	/* Contact Form Field multiple */
+
+	.ContactFormField--multiple {
+		align-content: center;
+		-webkit-flex-flow: row;
+		flex-flow: row;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		max-width: 100%;
+	}
+
+}
