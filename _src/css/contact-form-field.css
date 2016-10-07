@@ -4,9 +4,9 @@
 .ContactFormField {
 	/*border-bottom: solid 2px #bdbdbd;*/
 	border-bottom: solid 2px #1976d2;
-	/*border-radius: 2px;*/
+	border-radius: 2px;
 	display: block;
-	margin-bottom: 1.5em;
+	/*margin-bottom: 1.5em;*/
 	/*max-width: 24em;*/
 	overflow: hidden;
 	padding: 1.5em 1em 1.5em;
