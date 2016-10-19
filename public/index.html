@@ -40,6 +40,9 @@
 		-webkit-flex-flow: column;
 		flex-flow: column;
 		height: 100%;
+		background-image: url("../_src/img/bg-make-2-2.jpg");
+		background-size: cover;
+
 	}
 
 	h1 {
@@ -49,6 +52,7 @@
 
 	.container {
 		padding: 0 1em;
+
 	}
 
 	@media (min-width: 60em) {
@@ -77,6 +81,7 @@
 		position: relative;
 		margin: 0 auto;
 		width: 100%;
+
 	}
 
 	.Main-inner {
@@ -95,9 +100,9 @@
 	@media (min-width: 60em) {
 
 		.Main {
-			-webkit-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);
-			-moz-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);
-			box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);
+			/*-webkit-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
+			/*-moz-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
+			/*box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
 			height: 36em;
 			max-width: 48em;
 		}
@@ -198,6 +203,7 @@
 	.Contact {
 		height: 100%;
 		position: relative;
+		max-width: 30em;
 		width: 100%;
 	}
 
@@ -219,16 +225,16 @@
 
 	.Logo {
 		border-radius: 50%;
-		height: 8em;
-		width: 8em;
+		height: 12em;
+		width: 12em;
 	}
 
 	@media (min-width: 60em) {
 
 		.Logo {
 			border-radius: 50%;
-			height: 12em;
-			width: 12em;
+			height: 16em;
+			width: 16em;
 		}
 
 	}
@@ -248,7 +254,7 @@
 
 </script>
 
-<main class="Main grey-100 font-grey-700">
+<main class="Main font-white">
 
 	<div class="Main-background"></div>
 
@@ -256,19 +262,21 @@
 
 		<header class="Header Main-header font-white">
 
-			<div class="Header-background blue-700"></div>
+			<div class="Header-background"></div>
 
 			<div class="Header-inner container">
 
-				<div class="Logo Header-logo grey-200"></div>
+				<div class="Logo Header-logo">
+					<figure><img src="../_src/img/LOGO%20MAVI%20sem%20fundo.png"> </figure>
+				</div>
 
-				<h1>Fazenda Trevo Azul</h1>
+				<!--<h1>Fazenda Trevo Azul</h1>-->
 
 			</div>
 
 		</header>
 
-		<section id="contato" class="Contact">
+		<section id="contato" class="Contact flex align-center">
 
 			<div class="Contact-background"></div>
 
