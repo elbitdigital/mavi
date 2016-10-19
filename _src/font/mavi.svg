@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="mavi" horiz-adv-x="1000" >
+<font-face font-family="mavi" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="gplus" unicode="&#xf0d5;" d="M802 341q0-117-49-207t-138-142-206-51q-83 0-159 32t-131 87-87 131-32 159 32 159 87 131 131 87 159 32q160 0 274-107l-111-107q-65 63-163 63-69 0-127-34t-92-94-34-130 34-130 92-94 127-34q46 0 85 13t64 32 44 43 27 47 12 41h-232v141h386q7-36 7-68z m484 68v-118h-117v-116h-117v116h-117v118h117v116h117v-116h117z" horiz-adv-x="1285.7" />
+
+<glyph glyph-name="google" unicode="&#xf1a0;" d="M429 411h404q7-37 7-71 0-121-51-216t-145-149-215-54q-88 0-167 34t-137 91-91 137-34 167 34 167 91 137 137 91 167 34q167 0 287-113l-117-112q-68 67-170 67-72 0-133-37t-97-98-36-136 36-136 97-98 133-37q48 0 89 14t67 33 46 46 28 49 13 43h-243v147z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="facebook-1" unicode="&#xf30c;" d="M500 644l-142 0q-14 0-25-15t-11-37l0-102 178 0 0-148-178 0 0-442-170 0 0 442-152 0 0 148 152 0 0 86q0 94 59 159t147 65l142 0 0-156z" horiz-adv-x="500" />
+
+<glyph glyph-name="tumblr" unicode="&#xf315;" d="M560-58q-48-26-106-40-48-12-102-12-58 0-110 16-54 20-82 46-36 32-46 64-14 30-14 96l0 322-100 0 0 130q54 18 92 50t62 80q24 52 30 116l130 0 0-232 216 0 0-144-216 0 0-236q0-84 8-102 10-24 32-36 28-20 68-20 68 0 138 46l0-144z" horiz-adv-x="560" />
+
+<glyph glyph-name="instagram" unicode="&#xf32d;" d="M690 350q0 26-6 50l176 0 0-344q0-56-39-96t-95-40l-592 0q-56 0-95 40t-39 96l0 344 174 0q-4-32-4-50 0-106 76-183t184-77q106 0 183 77t77 183z m36 430q56 0 95-39t39-95l0-146-218 0q-78 110-212 110-138 0-212-110l-218 0 0 146q0 56 39 95t95 39l592 0z m64-166l0 72q0 24-24 24l-72 0q-24 0-24-24l0-72q0-8 7-16t17-8l72 0q24 0 24 24z m-200-264q0-66-47-113t-113-47-113 47-47 113q0 68 47 114t113 46 113-46 47-114z" horiz-adv-x="860" />
+</font>
+</defs>
+</svg>

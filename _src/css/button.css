@@ -40,3 +40,16 @@
 	background-color: #ff6f00; /*900*/
 	color: #e0e0e0;
 }
+
+/* White button style */
+
+.Button--white {
+	background-color: #ffffff;
+	color: #212121;
+}
+
+.Button--white:active {
+	background-color: #cecece;
+	color: #212121;
+}
+

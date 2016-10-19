@@ -1,4 +1,4 @@
-const _PROJECTNAME = 'fazendatrevoazul';
+const _PROJECTNAME = 'mavicosmeticos';
 
 var gulp = require('gulp'),
 	watch = require('gulp-watch'),

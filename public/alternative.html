@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-<html lang="" class="roboto">
+<html lang="pt-br" class="roboto">
 <meta charset="UTF-8">
-<title>Fazenda Trevo Azul</title>
+<title>Mavi Cosméticos</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-<script>
-	(function(d) {
-		var config = {
-					kitId: 'vfg6web',
-					scriptTimeout: 3000,
-					async: true
-				},
-				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-	})(document);
-</script>
+
 <script src="dist/js/villa.min.js"></script>
 <link rel="stylesheet" href="dist/css/villa.min.css"/>
-<link rel="stylesheet" href="dist/css/fazendatrevoazul.css"/>
+<link rel="stylesheet" href="dist/css/mavicosmeticos.css"/>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="dist/css/material-colors.css"/>
 <link rel="stylesheet" type="text/css" href="dist/css/villa-cross.min.css"/>
@@ -37,9 +28,10 @@
 		display: flex;
 		-webkit-justify-content: flex-start;
 		justify-content: flex-start;
-		-webkit-flex-flow: column;
-		flex-flow: column;
-		height: 100%;
+		/*-webkit-flex-flow: column;*/
+		/*flex-flow: column;*/
+		background-image: url("dist/img/bg-make.jpg");
+		background-size: cover;
 	}
 
 	h1 {
@@ -76,6 +68,19 @@
 	.Main {
 		position: relative;
 		margin: 0 auto;
+		height: auto;
+		width: 100%;
+	}
+
+	.Main-background {
+		background-color: #000;
+		border-radius: 3px;
+		filter: alpha(opacity=30);
+		height: 100%;
+		opacity: 0.3;
+		position: absolute;
+		right: 0;
+		top: 0;
 		width: 100%;
 	}
 
@@ -85,8 +90,8 @@
 		display: -ms-flexbox;
 		display: -webkit-flex;
 		display: flex;
-		-webkit-flex-flow: column;
-		flex-flow: column;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
 		height: 100%;
 		position: relative;
 		width: 100%;
@@ -95,14 +100,17 @@
 	@media (min-width: 60em) {
 
 		.Main {
-			-webkit-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);
-			-moz-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);
-			box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);
+			/*-webkit-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
+			/*-moz-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
+			/*box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
 			height: 36em;
 			max-width: 48em;
 		}
 
 		.Main-inner {
+
+			/*-webkit-flex-flow: column;*/
+			/*flex-flow: column;*/
 			-webkit-flex-flow: row;
 			flex-flow: row;
 		}
@@ -139,11 +147,11 @@
 	}
 
 	.Header-background {
-		width: 100%;
 		height: 100%;
-		position: absolute;
 		left: 0;
+		position: absolute;
 		top: 0;
+		width: 100%;
 	}
 
 	.Header-logo {
@@ -160,18 +168,26 @@
 		display: flex;
 		-webkit-flex-flow: column;
 		flex-flow: column;
-		padding: 1em;
+		height: 100%;
+		padding: 2em 1em;
 		position: relative;
+		text-align: center;
+		width: 100%;
+	}
+
+	.Header-inner p {
+		font-size: 1.25em;
 	}
 
 	@media (min-width: 60em) {
 
 		.Header {
-			max-width: 19em;
+			max-width: 60%;
 		}
 
 		.Header-inner {
-			padding: 1em;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
 		}
 
 	}
@@ -179,7 +195,7 @@
 	@media (min-width: 72em) {
 
 		.Header {
-			max-width: 19em;
+			max-width: 60%;
 		}
 
 	}
@@ -187,7 +203,7 @@
 	@media (min-width: 96em) {
 
 		.Header {
-			max-width: 29em;
+			max-width: 60%;
 		}
 
 	}
@@ -202,15 +218,24 @@
 		width: 100%;
 	}
 
+	.Contact-background {
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	.Contact-inner {
+		position: relative;
+		width: 100%;
+	}
+
 	.Contact-inner.container {
 		padding: 0 1em;
 	}
 
 	@media (min-width: 96em) {
-
-		.Contact {
-
-		}
 
 		.Contact-inner.container {
 			padding: 0 3em;
@@ -245,37 +270,35 @@
 <style>
 
 	.Logo {
-		border-radius: 50%;
-		height: 8em;
-		width: 8em;
+		width: 9em;
+		margin: 1.5em;
 	}
 
 	@media (min-width: 60em) {
 
 		.Logo {
-			border-radius: 50%;
-			height: 12em;
-			width: 12em;
+			width: 15em;
 		}
 
 	}
 
 </style>
 
+<style>
+
+	.About, .Place {
+		margin: 1em;
+	}
+
+	.Place-social {
+		margin: 1.5em;
+	}
+
+</style>
+
 <body class="grey-100">
 
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-85364502-1', 'auto');
-	ga('send', 'pageview');
-
-</script>
-
-<main class="Main grey-100 font-grey-700">
+<main class="Main font-grey-700">
 
 	<div class="Main-background"></div>
 
@@ -283,29 +306,62 @@
 
 		<header class="Header Main-header font-white">
 
-			<div class="Header-background blue-700"></div>
+			<div class="Header-background"></div>
 
 			<div class="Header-inner container">
 
-				<div class="Logo Header-logo grey-200"></div>
+				<div class="Logo Header-logo">
+					<figure><img src="dist/img/logo-mavi.png" alt="Mavi Cosméticos"></figure>
+				</div>
 
-				<h1>Fazenda Trevo Azul</h1>
+				<div class="About Header-about">
+					<p>Insira a descrição aqui</p>
+				</div>
+
+				<div class="Place Header-place">
+
+					<div class="Place-local">
+
+						<p>Rua Manoel Leão Rego, nº 214</p>
+						<p>Centro, Palmital - SP</p>
+						<p>18 3351-2475</p>
+						<p>18 9 9696-1569</p>
+
+					</div>
+
+					<div class="Place-social" style="font-size: 1.5em;">
+
+						<a href="#" class="hfont-red-900">
+							<span class="icon icon-gplus"></span>
+						</a>
+
+						<a href="#" class="hfont-indigo-800">
+							<span class="icon icon-facebook-1"></span>
+						</a>
+
+						<a href="#" class="hfont-amber-900">
+							<span class="icon icon-instagram"></span>
+						</a>
+
+					</div>
+
+				</div>
 
 			</div>
 
 		</header>
 
-		<section id="contato" class="Contact">
+		<section id="contato" class="Contact font-white">
 
 			<div class="Contact-background"></div>
 
 			<div class="Contact-inner container">
 
-				<header class="Contact-header">
+				<!--<header class="Contact-header">-->
 
-					<h2>Envie uma mensagem</h2>
+					<!--<h2>Envie uma mensagem</h2>-->
 
-				</header>
+				<!--</header>-->
 
 				<form id="cForm" class="ContactForm" novalidate>
 
@@ -374,7 +430,7 @@
 
 					<div class="ContactFormButton">
 
-						<button id="cSubmit" type="submit" value="Enviar" class="ContactFormField-button Button">
+						<button id="cSubmit" type="submit" value="Enviar" class="ContactFormField--button Button Button--white">
 
 							<span>Enviar</span>
 
@@ -392,7 +448,7 @@
 
 </main>
 
-<script src="dist/js/fazendatrevoazul.js"></script>
+<script src="dist/js/mavicosmeticos.js"></script>
 
 <script>
 
