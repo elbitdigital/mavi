@@ -35,8 +35,7 @@
 	}
 
 	h1 {
-		font-size: 1.5em;
-		font-weight: 400;
+		visibility: hidden;
 	}
 
 	.container {
@@ -100,9 +99,9 @@
 	@media (min-width: 60em) {
 
 		.Main {
-			/*-webkit-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
-			/*-moz-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
-			/*box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
+			/*-webkit-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);
+			-moz-box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);
+			box-shadow: 3px 3px 1em rgba(0, 0, 0, .18);*/
 			height: 36em;
 			max-width: 48em;
 		}
@@ -175,8 +174,16 @@
 		width: 100%;
 	}
 
-	.Header-inner p {
-		font-size: 1.25em;
+	.info {
+
+		font-size: .875em;
+		
+	}
+
+	.description {
+
+		font-size: 1.125em;
+
 	}
 
 	@media (min-width: 60em) {
@@ -300,6 +307,8 @@
 
 <main class="Main font-grey-700">
 
+<h1>Mavi Cosméticos Palmital</h1>
+
 	<div class="Main-background"></div>
 
 	<div class="Main-inner">
@@ -314,33 +323,34 @@
 					<figure><img src="dist/img/logo-mavi.png" alt="Mavi Cosméticos"></figure>
 				</div>
 
+
 				<div class="About Header-about">
-					<p>Suprimentos de beleza, cosméticos e salão de cabeleireiro.</p>
+					<p class="description">Loja especializada em maquiagem e cosméticos e completo estúdio Make up </p>
 				</div>
 
 				<div class="Place Header-place">
 
 					<div class="Place-local">
 
-						<p>Rua Manoel Leão Rego, nº 214</p>
-						<p>Centro, Palmital - SP</p>
-						<p>18 3351-2475</p>
-						<p>18 9 9696-1569</p>
+						<p class="info">Rua Manoel Leão Rego, nº 214</p>
+						<p class="info">Centro, Palmital - SP</p>
+						<p class="info">18 3351-2475</p>
+						<p class="info">18 9 9696-1569</p>
 
 					</div>
 
 					<div class="Place-social" style="font-size: 1.5em;">
 
-						<a href="#" class="hfont-red-900">
-							<span class="icon icon-gplus"></span>
-						</a>
+						<!--<a href="#" class="hfont-red-900">-->
+							<!--<span class="icon icon-gplus"></span>-->
+						<!--</a>-->
 
-						<a href="#" class="hfont-indigo-800">
-							<span class="icon icon-facebook-1"></span>
-						</a>
-
-						<a href="#" class="hfont-amber-900">
+						<a href="https://www.instagram.com/mavicosmeticos" class="hfont-amber-900">
 							<span class="icon icon-instagram"></span>
+						</a>
+
+						<a href="https://www.facebook.com/mavicosmeticospalmital/" class="hfont-indigo-800">
+							<span class="icon icon-facebook-1"></span>
 						</a>
 
 					</div>
